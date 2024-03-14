@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                sola.bruno.projetocontrolefinanceiro/sola.bruno.projetocontrolefinanceiro.Main
+                                sola.bruno.projetocontrolefinanceiro.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

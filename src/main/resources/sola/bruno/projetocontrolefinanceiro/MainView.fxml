@@ -6,7 +6,7 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane prefHeight="453.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane prefHeight="453.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sola.bruno.projetocontrolefinanceiro.MainViewController">
    <content>
       <VBox prefHeight="385.0" prefWidth="623.0">
          <children>
@@ -15,29 +15,29 @@
                   <Menu mnemonicParsing="false" text="Inicio" />
                 <Menu mnemonicParsing="false" text="Lançamentos">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Receitas e Despesas" />
-                        <MenuItem mnemonicParsing="false" text="Recorrentes" />
+                    <MenuItem fx:id="menuItemReceitasDespesas" mnemonicParsing="false" onAction="#onMenuItemReceitasDespesasAction" text="Receitas e Despesas" />
+                        <MenuItem fx:id="menuItemRecorrentes" mnemonicParsing="false" onAction="#onMenuItemRecorrentesAction" text="Recorrentes" />
                   </items>
                 </Menu>
                   <Menu mnemonicParsing="false" text="Consultas">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Saldo" />
-                        <MenuItem mnemonicParsing="false" text="Transações" />
+                        <MenuItem fx:id="menuItemSaldo" mnemonicParsing="false" onAction="#onMenuItemSaldoAction" text="Saldo" />
+                        <MenuItem fx:id="menuItemTransacoes" mnemonicParsing="false" onAction="#onMenuItemTransacoesAction" text="Transações" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Opções">
                      <items>
                         <Menu mnemonicParsing="false" text="Exportar">
                           <items>
-                            <MenuItem mnemonicParsing="false" text="PDF" />
-                              <MenuItem mnemonicParsing="false" text="XML" />
+                            <MenuItem fx:id="menuItemPDF" mnemonicParsing="false" onAction="#onMenuItemPDFAction" text="PDF" />
+                              <MenuItem fx:id="menuItemXML" mnemonicParsing="false" onAction="#onMenuItemXMLAction" text="XML" />
                           </items>
                         </Menu>
                      </items>
                   </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
                   </items>
                 </Menu>
               </menus>
