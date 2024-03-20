@@ -37,7 +37,7 @@ public class MainViewController implements Initializable {
     }
     @FXML
     public void onMenuItemRecorrentesAction(){
-        System.out.println("onMenuItemRecorrentesAction");
+        loadView("RecorrenteList.fxml");
     }
     @FXML
     public void onMenuItemSaldoAction(){
